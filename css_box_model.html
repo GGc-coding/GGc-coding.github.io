@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+  </title>
+  <style>
+    .container {
+      width: 200px;
+    }
+
+    p,
+    ul,
+    li,
+    .block {
+      border: 2px solid green;
+      padding: 10px;
+    }
+
+    ul {
+      display: inline-flex;
+      justify-content: space-between;
+      list-style: none;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .box {
+      width: 300px;
+      padding: 40px;
+      margin: 10px;
+      border: 2px solid gold;
+      background-color: silver;
+      height: 200px;
+      /* text-align: center; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box p {
+      border: none;
+    }
+
+    .alternate {
+      box-sizing: border-box;
+    }
+
+    .box1 {
+      margin-top: -20px;
+      margin-bottom: 2px;
+      margin-left: 2px;
+      margin-right: 2px;
+      padding: 40px;
+      border: 2px solid purple;
+      /* margin: solid blue; */
+      background-color: silver;
+    }
+
+    .box1 p {
+      border: none;
+    }
+
+    .container1 {
+      width: 200px;
+      height: 150px;
+      border: 2px solid blue;
+      padding: 12px;
+    }
+
+    .one {
+      margin-bottom: 50px;
+    }
+
+    .two {
+      margin-top: -10px;
+    }
+
+    .border {
+      border-top: 2px dotted darkgreen;
+      border-bottom: 2px solid pink;
+      border-left: 1px solid black;
+      border-right: 12px solid brown;
+      width: 300px;
+      height: 100px;
+    }
+
+    .container2 {
+      border-top: 4px dotted darkblue;
+      border-right: 1px solid grey;
+      border-left: 0px;
+      border-bottom: 6px double violet;
+      width: 600px;
+      height: 150px;
+    }
+
+    .Links-list {
+      border: none;
+    }
+
+    .Links-list a {
+      background-color: rgb(179, 57, 81);
+      border: 3px solid black;
+      display: inline-block;
+      color: white;
+    }
+
+    .Links-list a {
+      border: none;
+    }
+
+    .Links-list a:hover {
+      background-color: maroon;
+      color: white;
+    }
+
+    .Links-list a:visited {
+      background-color: red;
+      color: beige
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p>I am a paragraph. A short one.</p>
+  </div>
+
+  <ul>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+  </ul>
+  <p>
+    This is another paragraph.Some of the <span class="block">Words</span> have been wrapped in a <span>span
+      elements.</span>
+  </p>
+  <!-- Playing with boxes -->
+  <div class="box">
+    <p>I use the standard box model.</p>
+  </div>
+
+  <div class="box alternate">
+    <p>I use the alternate box model</p>
+  </div>
+
+  <!-- Margin  -->
+  <div class="container1">
+    <div class="box1">Change My Margin.</div>
+  </div>
+
+  <div>
+    <p class="one">I am paragraph one.</p>
+
+    <p class="two">I am paragraph two.</p>
+  </div>
+
+  <!-- Borders -->
+  <div class="container2">
+    <p class="border">Change my borders.</p>
+  </div>
+</body>
+
+<!-- Display:inline-block -->
+<nav>
+  <ul class="Links-list a">
+    <li><a href="https://www.google.com" target="_blank">Google</a></li>
+    <li><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
+    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+
+  </ul>
+
+</nav>
+
+</html>
