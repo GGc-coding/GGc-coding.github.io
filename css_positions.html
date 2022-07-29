@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    CSS POSITIONS
+  </title>
+  <style>
+    body {
+      margin: auto;
+    }
+
+    .box {
+      background: orange;
+      color: white;
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      display: inline-block;
+    }
+
+    #Two {
+      background: red;
+      position: relative;
+      top: 50px;
+      right: 100px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    .container {
+      margin-top: 100px;
+      position: relative;
+    }
+
+    p {
+      background: yellow;
+      border: 2px solid blue;
+      width: 500px;
+      /* height: 80px; */
+      padding: 10px;
+    }
+
+    span {
+      background: red;
+      border: 2px solid black;
+    }
+
+    .positioned {
+      position: absolute;
+      top: 8px;
+      background: orange;
+    }
+
+    .scroll-container {
+      border: 2px solid black;
+      padding: 12px;
+      height: 150px;
+      width: 550px;
+      overflow: scroll;
+      /* margin-left: auto; */
+    }
+
+    .outer p {
+      border: none;
+      background: none;
+      overflow: scroll;
+      /* height: 200px; */
+      padding-left: 150px;
+      /* position: relative; */
+
+    }
+
+    #ONE {
+      position: fixed;
+      top: 580px;
+      left: 10px;
+    }
+
+    .box1 {
+      background: blue;
+      width: 100px;
+      height: 100px;
+      color: white;
+      padding: 12px;
+    }
+  </style>
+</head>
+
+<div>
+  <div class="box" id="One">ONE</div>
+  <div class="box" id="Two">TWO</div>
+  <div class="box" id="Three">THREE</div>
+  <div class="box" id="Four">FOUR</div><br>
+  <hr>
+  <div class="container">
+    <h1>Absolute positioning</h1>
+
+    <p>I am a basic block level element. My adjacent block level elements sit on new lines below me.</p>
+
+    <p class="positioned">By default we span 100% of the width of our parent element, and we are as tall as our child
+      content. Our total width and height is our content + padding + border width/height.</p>
+
+    <p>We are separated by our margins. Because of margin collapsing, we are separated by the width of one of our
+      margins,
+      not both.</p>
+
+    <p>inline elements <span>like this one</span> and <span>this one</span> sit on the same line as one another, and
+      adjacent text nodes, if there is space on the same line. Overflowing inline elements <span>wrap onto a new line if
+        possible — like this one containing text</span>, or just go on to a new line if not, much like this image will
+      do:
+      <img src="long.jpg" alt="Image Is Not Loading">
+    </p>
+  </div>
+
+  <h1>
+    FIXED POSITIONS
+  </h1>
+
+  <div class="outer scroll-container">
+
+    <p>
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor eget pulvinar lobortis.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ac dolor augue.
+      Pellentesque mi mi, laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit.
+      Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut arcu aliquam purus viverra dictum vel
+      sit amet mi.
+      Duis nisl mauris, aliquam sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem aliquam, congue
+      porttitor tortor.
+      Sed tempor nisl a lorem consequat, id maximus erat aliquet. Sed sagittis porta libero sed condimentum.
+      Aliquam finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id ultrices ultrices, tempor et
+      tellus.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor eget pulvinar lobortis.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ac dolor augue.
+      Pellentesque mi mi, laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit.
+      Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut arcu aliquam purus viverra dictum
+      vel sit amet mi.
+      Duis nisl mauris, aliquam sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem aliquam, congue
+      porttitor tortor.
+      Sed tempor nisl a lorem consequat, id maximus erat aliquet. Sed sagittis porta libero sed condimentum.
+      Aliquam finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id ultrices ultrices, tempor et
+      tellus.
+    </p>
+    <div class="box1" id="ONE">
+      ONE
+    </div>
+  </div>
+
+  </body>
+
+</html>
