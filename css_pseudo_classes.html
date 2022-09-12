@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    PSEUDO CLASSES
+  </title>
+  <style>
+    a:link {
+      color: skyblue;
+    }
+
+    a:hover {
+      color: orange;
+      font-size: 25px;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:active {
+      color: green;
+    }
+
+    div {
+      background-color: green;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    div:hover {
+      background-color: darkred;
+    }
+
+    .hover:hover p {
+      display: block;
+    }
+
+    p {
+      background-color: yellow;
+      padding: 12px;
+      display: none;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>ANCHORE PSEUDO CLASSES</h1>
+  <a href="https://twitter.com/">LINK</a><br><br>
+  <div>Mouse over me</div>
+  <h2>SIMPLE TOOLTIP HOVER</h2>
+  <div class="hover">Hover over me to show the hidden content<p>Tada! Here I am.</p>
+  </div>
+</body>
+
+</html>
