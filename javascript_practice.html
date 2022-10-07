@@ -5,39 +5,183 @@
   <title>
     JAVASCRIPT PRACTICE
   </title>
+  <style>
+    .heading {
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .task-label {
+      display: inline-block;
+      width: 50px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    #link-id {}
+  </style>
 </head>
 
 <body>
   <h1>JAVASCRIPT PRACTICE</h1>
-
-  <h2>Conditional Statements</h2>
   <script src="./conditions.js"></script>
-  <ul>
-    <li>
-      <a href="https://javascript.info/ifelse#if-a-string-with-zero" target="_blank">Task 1</a>
-      <button onclick="conditionalTask1()">Run</button>
-    </li>
-    <li>
-      <a href="https://javascript.info/ifelse" target="_blank">Task 2</a>
-      <button onclick="conditionalTask2()">Run</button>
-    </li>
-    <li>
-      <a href="https://javascript.info/task/check-standard" target="_blank">Task 3</a>
-      <button onclick="conditionalTask3()">Run</button>
-    </li>
-    <li>
-      <a href="https://javascript.info/ifelse#show-the-sign" target="_blank">Task 4</a>
-      <button onclick="conditionalTask4()">Run</button>
-    </li>
-    <li>
-      <a href="https://javascript.info/ifelse#rewrite-if-into" target="_blank">Task 5</a>
-      <button onclick="conditionalTask5()">Run</button>
-    </li>
-    <li>
-      <a href="https://javascript.info/ifelse#rewrite-if-else-into" target="_blank">Task 6</a>
-      <button onclick="conditionalTask6()">Run</button>
-    </li>
-  </ul>
+  <script src="./logical_operator.js"></script>
+  <script src="./loops.js"></script>
+  <script src="./switch.js"></script>
+  <details>
+    <summary class="heading">
+      Conditional Statements
+    </summary>
+    <ul>
+      <li>
+        <a class="task-label" href="https://javascript.info/ifelse#if-a-string-with-zero" target="_blank">Task 1</a>
+        <button onclick="conditionalTask1()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/ifelse" target="_blank">Task 2</a>
+        <button onclick="conditionalTask2()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/task/check-standard" target="_blank">Task 3</a>
+        <button onclick="conditionalTask3()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/ifelse#show-the-sign" target="_blank">Task 4</a>
+        <button onclick="conditionalTask4()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/ifelse#rewrite-if-into" target="_blank">Task 5</a>
+        <button onclick="conditionalTask5()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/ifelse#rewrite-if-else-into" target="_blank">Task 6</a>
+        <button onclick="conditionalTask6()">Run</button>
+      </li>
+    </ul>
+  </details>
+  <details>
+    <summary class="heading">
+      Logical Operator
+    </summary>
+    <ul>
+      <li>
+        <a class="task-label" href="https://javascript.info/logical-operators#or" target="_blank">Task 1</a>
+        <button onclick="logicalTask1()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/logical-operators#and" target="_blank">Task 2</a>
+        <button onclick="logicalTask2()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/logical-operators#not" target="_blank">Task 3</a>
+        <button onclick="logicalTask3()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/logical-operators#what-s-the-result-of-or-ed-alerts"
+          target="_blank">Task 4</a>
+        <button onclick="logicalTask4()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/logical-operators#the-result-of-or-and-or"
+          target="_blank">Task 5</a>
+        <button onclick="logicalTask5()">Run </button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/logical-operators#check-the-range-between"
+          target="_blank">Task 6</a>
+        <button onclick="logicalTask6()">Run </button>
+      </li>
+      <li>
+        <span class="task-label">Task 7</span>
+        <button onclick="logicalTask7()">Run </button>
+      </li>
+      <li>
+        <span class="task-label">Task 8</span>
+        <button onclick="logicalTask8()">Run </button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/nullish-coalescing-operator#comparison-with"
+          target="_blank">Task 9</a>
+        <button onclick="logicalTask9()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/nullish-coalescing-operator#precedence" target="_blank">Task
+          10</a>
+        <button onclick="logicalTask10()">Run</button>
+      </li>
+    </ul>
+  </details>
+  <details>
+    <summary class="heading">
+      Loops
+    </summary>
+    <ul>
+      <li>
+        <a class="task-label" href="https://javascript.info/while-for#the-while-loop" target="_blank">Task 1</a>
+        <button onclick="loopsTask1()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/while-for#the-while-loop" target="_blank">Task 2</a>
+        <button onclick="loopsTask2()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/while-for#the-do-while-loops" target="_blank">Task 3</a>
+        <button onclick="loopsTask3()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/while-for#the-for-loop" target="_blank">Task 4</a>
+        <button onclick="loopsTask4()">Run </button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/while-for#breaking-the-loop" target="_blank">Task 5</a>
+        <button onclick="loopsTask5()">Run </button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/while-for#continue" target="_blank">Task 6</a>
+        <button onclick="loopsTask6()">Run  </button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/while-for#output-even-numbers-in-the-loop" target="_blank">Task 7</a>
+        <button onclick="loopsTask7()">Run  </button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/while-for#repeat-until-the-input-is-correct" target="_blank">Task 8</a>
+        <button onclick="loopsTask8()"> Run </button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/while-for#output-prime-numbers" target="_blank">Task 9</a>
+        <button onclick="loopsTask9()"> Run </button>
+      </li>
+    </ul>
+  </details>
+  <details>
+    <summary class= "heading">
+      SWItch
+    </summary>
+    <ul>
+      <li>
+        <a class="task-label" href="https://javascript.info/switch#an-example" target="_blank">Task 1</a>
+        <button onclick="switchTask1()"> Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/switch#an-example" target="_blank">Task 2</a>
+        <button onclick="switchTask2()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/switch#grouping-of-case" target="_blank">Task 3</a>
+        <button onclick="switchTask3()">Run</button>
+      </li>
+      <li>
+        <a class="task-label" href="https://javascript.info/switch#type-matters" target="_blank">Task 4</a>
+        <button onclick="switchTask4()">Run</button>
+      </li>
+    </ul>
+  </details>
+
+
 </body>
 
 </html>
