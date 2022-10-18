@@ -41,4 +41,36 @@ function funcTask4() {
   alert("Hurray! You guessed the number!");
 }
 
+function funcTask5(question, yes, no) {
+  if (confirm(question)) yes();
+  else no;
+}
 
+funcTask5(
+  "Do you agree?",
+  () => alert("You agreed!"),
+  () => alert("You cancelled the exceution."),
+);
+
+function funcTask6() {
+  //factorial
+  let n = +prompt("Enter a value?");
+  let total = 1;
+  for(i = n; i >= 1; i--){
+    total = total * i;
+  }
+  alert(total);
+}
+
+function funcTask7() {
+  //number printing in triangle shape
+  let n = +prompt("Enter a value?");
+  for (i = 1; i <=n; i++){
+    for(j = 1; j<=i; j++){
+      console.log(j);
+    }
+    console.log("\n");
+  }
+}
+
+funcTask7();
