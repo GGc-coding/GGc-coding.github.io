@@ -46,12 +46,6 @@ function funcTask5(question, yes, no) {
   else no;
 }
 
-funcTask5(
-  "Do you agree?",
-  () => alert("You agreed!"),
-  () => alert("You cancelled the exceution."),
-);
-
 function funcTask6() {
   //factorial
   let n = +prompt("Enter a value?");
@@ -64,13 +58,13 @@ function funcTask6() {
 
 function funcTask7() {
   //number printing in triangle shape
-  let n = +prompt("Enter a value?");
+  let output = "";
+  let n = +prompt("Enter a number: ");
   for (i = 1; i <=n; i++){
     for(j = 1; j<=i; j++){
-      console.log(j);
+      output = output + j;
     }
-    console.log("\n");
+    output = output + "\n";
   }
+  console.log(output);
 }
-
-funcTask7();

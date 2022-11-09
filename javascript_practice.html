@@ -212,7 +212,8 @@
         <a class="task-label" href="https://javascript.info/arrow-functions-basics#rewrite-with-arrow-functions"
           target="_blank">Task
           5</a>
-        <button onclick="funcTask5()">Run</button>
+        <button
+          onclick='funcTask5("Do you agree?", () => alert("You agreed!"), () => alert("You cancelled the exceution."))'>Run</button>
       </li>
       <li>
         <span class="task-label">Task 6</span>
@@ -235,10 +236,10 @@
       </li>
       <li>
         <a class="task-label" href="https://javascript.info/object#check-for-emptiness" target="_blank">Task 2</a>
-        <button onclick="objTask2()">Run</button>
+        <button onclick="alert(isEmpty({}))">Run</button>
       </li>
       <li>
-        <a class="task-label" href="" target="_blank">Task 3</a>
+        <a class="task-label" href="https://javascript.info/object#sum-object-properties" target="_blank">Task 3</a>
         <button onclick="objTask3()">Run</button>
       </li>
       <li>
