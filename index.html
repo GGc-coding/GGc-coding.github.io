@@ -5,74 +5,14 @@
 	<title>
 		Chandana's blog
 	</title>
-	<style>
-		.icon {
-			bottom: 20px;
-			right: 20px;
-			position: fixed;
-			cursor: pointer;
-		}
-
-		body {
-			margin: 0;
-		}
-
-		.navigation {
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: flex-end;
-			list-style: none;
-			margin: 0;
-			background: yellowgreen;
-		}
-
-		.navigation a {
-			display: block;
-			padding: 1em;
-			color: white;
-		}
-
-		.navigation a:hover {
-			background-color: green;
-		}
-
-		@media all and (max-width: 800px) {
-			.navigation {
-				justify-content: space-around;
-			}
-		}
-
-		@media all and (max-width: 500px) {
-			.navigation {
-				flex-flow: column wrap;
-				padding: 0;
-			}
-
-			.navigation a {
-				text-align: center;
-				padding: 10px;
-				border-top: 1px solid rgba(255, 255, 255, 0.3);
-				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-			}
-
-			.navigation li:last-of-type a {
-				border-bottom: none;
-			}
-		}
-
-		.practice-link {
-			margin-bottom: 12px;
-			display: block;
-			text-transform: uppercase;
-		}
-	</style>
+	<link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
 	<ul class="navigation">
 		<li><a href="#">HOME</a></li>
 		<li><a href="#">ABOUT</a></li>
-		<li><a href="#">CODES</a></li>
+		<li><a href="#">PROJECTS</a></li>
 		<li><a href="#">CONTACT</a></li>
 	</ul>
 
@@ -108,9 +48,7 @@
 		<img src="./assets/images/profile_pic.jpeg"
 			style="margin-right: 40px; width: 280px; height: 280px;border-radius: 280px; object-fit: cover; border: 2px solid black;" />
 
-		<a href="https://api.whatsapp.com/send?phone=919885896317&text=Hey%20Chandana!" target="_blank">
-			<img src="./assets/images/whatsapp-icon.svg" class="icon">
-		</a>
+	
 	</div>
 
 
